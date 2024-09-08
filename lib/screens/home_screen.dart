@@ -18,6 +18,13 @@ class _HomeScreenState extends State<HomeScreen>
   int _scoreOfO = 0;
   int _scoreOfX = 0;
 
+  @override
+  void initState() {
+    super.initState();
+    _scoreOfO = 0;
+    _scoreOfX = 0;
+  }
+
   void clear() {
     setState(() {
       firstButton = "";
